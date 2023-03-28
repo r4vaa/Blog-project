@@ -4,4 +4,11 @@
 
 <p><%= startingContent %></p>
 
+<div class="contaier">
+    <% for(let i = 0; i < newPosts.length; i++) {%>
+        <% console.log(newPosts[i].title) %>
+        <% console.log(newPosts[i].content) %>
+    <% } %>
+    
+</div>
 <%- include('partials/footer') %>
