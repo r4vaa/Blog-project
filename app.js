@@ -42,7 +42,9 @@ app.post('/compose', function(req ,res) {
     res.redirect('/');
 })
 
-
+app.get('/post/:postName' , function(req , res) {
+    console.log(req.params.postName);
+})
 
 
 
